@@ -31,7 +31,7 @@ Partial Class UCtrlEmotion
         '
         'pbEmotion
         '
-        Me.pbEmotion.Location = New System.Drawing.Point(50, 22)
+        Me.pbEmotion.Location = New System.Drawing.Point(37, 30)
         Me.pbEmotion.Name = "pbEmotion"
         Me.pbEmotion.Size = New System.Drawing.Size(32, 32)
         Me.pbEmotion.TabIndex = 0
