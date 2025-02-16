@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.UCtrlEmotion1 = New PrjFaces.UCtrlEmotion()
         Me.btnConfused = New System.Windows.Forms.Button()
         Me.btnCool = New System.Windows.Forms.Button()
         Me.btnSmile = New System.Windows.Forms.Button()
@@ -31,14 +30,10 @@ Partial Class Form1
         Me.btnYell = New System.Windows.Forms.Button()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.btnPuhasta = New System.Windows.Forms.Button()
+        Me.UCtrlEmotion1 = New PrjFaces.UCtrlEmotion()
+        Me.USwitch1 = New PrjSwitch.USwitch()
+        Me.UBulb1 = New PrjLightBulb.UBulb()
         Me.SuspendLayout()
-        '
-        'UCtrlEmotion1
-        '
-        Me.UCtrlEmotion1.Location = New System.Drawing.Point(12, 12)
-        Me.UCtrlEmotion1.Name = "UCtrlEmotion1"
-        Me.UCtrlEmotion1.Size = New System.Drawing.Size(249, 196)
-        Me.UCtrlEmotion1.TabIndex = 0
         '
         'btnConfused
         '
@@ -103,11 +98,36 @@ Partial Class Form1
         Me.btnPuhasta.Text = "Puhasta"
         Me.btnPuhasta.UseVisualStyleBackColor = True
         '
+        'UCtrlEmotion1
+        '
+        Me.UCtrlEmotion1.Location = New System.Drawing.Point(48, 12)
+        Me.UCtrlEmotion1.Name = "UCtrlEmotion1"
+        Me.UCtrlEmotion1.Size = New System.Drawing.Size(147, 92)
+        Me.UCtrlEmotion1.TabIndex = 0
+        '
+        'USwitch1
+        '
+        Me.USwitch1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.USwitch1.Location = New System.Drawing.Point(48, 554)
+        Me.USwitch1.Name = "USwitch1"
+        Me.USwitch1.Size = New System.Drawing.Size(208, 103)
+        Me.USwitch1.TabIndex = 9
+        '
+        'UBulb1
+        '
+        Me.UBulb1.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.UBulb1.Location = New System.Drawing.Point(48, 269)
+        Me.UBulb1.Name = "UBulb1"
+        Me.UBulb1.Size = New System.Drawing.Size(256, 240)
+        Me.UBulb1.TabIndex = 8
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(836, 951)
+        Me.Controls.Add(Me.USwitch1)
+        Me.Controls.Add(Me.UBulb1)
         Me.Controls.Add(Me.btnPuhasta)
         Me.Controls.Add(Me.btnYell)
         Me.Controls.Add(Me.btnTeeth)
@@ -131,4 +151,6 @@ Partial Class Form1
     Friend WithEvents btnYell As Button
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents btnPuhasta As Button
+    Friend WithEvents UBulb1 As PrjLightBulb.UBulb
+    Friend WithEvents USwitch1 As PrjSwitch.USwitch
 End Class
