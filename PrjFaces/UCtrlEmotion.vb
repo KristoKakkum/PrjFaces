@@ -23,4 +23,15 @@
         End Select
     End Sub
 
+    Private Sub clearPictureBox()
+        If pbEmotion.Image IsNot Nothing Then
+            pbEmotion.Image.Dispose() ' Vabastab mälu
+            pbEmotion.Image = Nothing ' Eemaldab pildi
+        End If
+    End Sub
+
+    Public Sub ClearEmotion()
+        clearPictureBox()
+    End Sub
+
 End Class
