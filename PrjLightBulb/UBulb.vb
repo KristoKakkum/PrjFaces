@@ -3,7 +3,7 @@
     Private Sub selectLight(ByVal intLight As Integer)
         pbLight.Image = imgLoend.Images(intLight)
     End Sub
-    ' Avalik liidesmeetod
+
     Public Sub setLight(ByVal strLight As String)
         Select Case strLight
             Case "off"
